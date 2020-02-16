@@ -1,0 +1,51 @@
+$mainBlue : #2a2a72;
+$lightBlue : #009ffd;
+$mainWhite : #f3f3f3;
+$mainDark : #232528;
+$mainYellow : #ffa400;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif !important;
+  background: $mainWhite !important;
+  color: $mainDark !important;
+}
+
+// We included !important flag in body to keep bootstrap overrides away 
+// but we don't need this flag in our custom classes like the one below.
+.text-title {
+  font-family: 'Permanent Marker', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: $mainBlue;
+}
+
+.text-bright {
+  color: $lightBlue;
+}
+.btn-black {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: $mainDark;
+  border-radius: 0 !important;
+  border: 0.1rem solid $mainDark !important;
+}
+
+.btn-black:hover {
+  background: $mainDark !important;
+  color: $mainWhite !important;
+}
+
+.cart-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: $mainYellow;
+}
